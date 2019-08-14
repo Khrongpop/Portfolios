@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header'
+import Home from './components/Home'
 import './App.css';
 
-function App() {
+const App = () => {
+   const completeKey = e => {
+        console.log('click ', e);
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+       <Header completeKey={completeKey} style={headStyle} />
+       <Home/>
     </div>
   );
 }
+
+const headStyle = {
+    'position':'fixed'
+}
+
+
 
 export default App;
