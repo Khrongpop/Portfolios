@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"name": "Bandsquare",
+		"type": 2
+	},
+	{
+		"id": 2,
+		"name": "Idealand",
+		"type": 1
+	},
+	{
+		"id": 3,
+		"name": "Shortcut",
+		"type": 1
+	}
+]
